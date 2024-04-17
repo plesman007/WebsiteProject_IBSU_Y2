@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Pacific Laundry Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        body, main {
+            animation: fadeIn 1.5s ease;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-bottom: 1px solid #c4c93700;
+            overflow: hidden;
+        }
+
+        .logo {
+            height: 60px;
+            width: 70px;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 20%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+        }
+
+        .main-title {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: #004d40;
+            background-image: linear-gradient(to right, #e6ee47, #01be21);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            font-family: 'Freestyle Script', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #01be21;
+            color: white;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a.active {
+            background-color: #035f42;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #004d40;
+            margin-bottom: 20px;
+        }
+
+        .about-section {
+            display: inline-block;
+            width: 30%;
+            padding: 10px;
+            margin: 0 1.5%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            vertical-align: top;
+        }
+
+        .about-section img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f2f2f2;
+        }
+
+        footer p {
+            color: #333;
+        }
+
+        @media screen and (max-width: 768px) {
+            .about-section {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-title">
+            <img src="Pictures/Logo/logo4.jpeg" alt="Pacific Laundry Services Logo" class="logo">
+            <h1>Pacific Laundry Services</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="location.html">Location</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="#" class="active">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <div class="about-section">
+                <img src="Pictures/People/people1 (9).jpeg" alt="Our Story" width="200" height="200">
+                <h3>Our Story</h3>
+                <p>We started from a Humble Begining from 1975. Over the years, we have grown into a leading laundry service provider, serving thousands of satisfied customers.</p>
+            </div>
+            <div class="about-section">
+                <img src="Pictures/People/people1 (10).jpeg" alt="Our Values" width="200" height="200">
+                <h3>Our Values</h3>
+                <p>Efficiency and Productivity</p>
+                <p>We believe in efficiency and productivity in everything we do. We strive to optimize our processes and deliver outstanding results to our customers.</p>
+            </div>
+            <div class="about-section">
+                <img src="Pictures/People/people1 (7).jpeg" alt="Our Mission" width="200" height="200">
+                <h3>Our Mission</h3>
+                <p>To provide the best laundry service in Papua New Guinea</p>
+                <p>We strive to exceed customer expectations and deliver exceptional quality and convenience.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Pacific Laundry Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

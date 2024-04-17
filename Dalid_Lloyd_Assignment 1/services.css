@@ -1,0 +1,238 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body, html{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-bottom: 1px solid #c4c93700;
+    overflow: hidden;
+    text-align: left;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 60px;
+    width: 70px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);
+    transition: transform 0.3s; 
+    gap: 20px;
+}
+
+
+.main-title{
+    display: flex;
+    align-self: center;
+    gap: 20px;
+    background-image: linear-gradient(to right, #e6ee47, #01be21);
+}
+
+.main-title h1 {
+    font-family: 'FreeStyle Script', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem; 
+    color: #004d40; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.navbar {
+    background-color: #01be21;
+    color: white;
+    overflow: hidden;
+}
+
+.navbar a.active {
+    font-weight: bold;
+    color: #00ff08;
+}
+
+
+.navbar a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+.navbar a:hover {
+    background-color: #035f42;
+    text-decoration: underline;
+}
+
+
+.hero {
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #e0e0e0;
+    animation: fadeIn 1.0s ease-out;
+}
+
+.hero {
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #60783f;
+    animation: fadeIn 1.0s ease-out;
+}
+
+#main-title {
+    color: #027352;
+    font-family: 'FreeStyle Script', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, #e6ee47, #01be21);
+    position: relative;
+}
+
+#main-title img {
+    width: auto;
+    height: 3px; 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%);
+}
+
+section {
+    margin: 40px;
+    padding: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+#why-choose-us {
+    border: #035f42;
+    background-color: #e6ee47;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    padding: 80px;
+    margin: 20px auto;
+    
+    
+    
+}
+
+#residential-cleaning, #commercial-cleaning, #end-of-tenancy-cleaning {
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #28e694;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+#testimonials {
+    /* Styles for the testimonials section */
+    background-color: rgb(171, 161, 26);
+    padding: 20px;
+}
+
+.testimonial {
+    font-size: large;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+blockquote {
+    font-style: italic;
+    quotes: "“" "”" "‘" "’";
+    margin-top: 10px; /* Add margin-top property */
+    margin-bottom: 10px; /* Add margin-bottom property */
+}
+
+blockquote:before {
+    content: open-quote;
+}
+
+blockquote:after {
+    content: close-quote;
+}
+
+cite {
+    display: block; 
+    text-align: right;
+    margin-top: 10px;
+    font-style: normal; 
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .logo {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .services-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -10%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #00A300;
+    box-shadow: 0 0 8px rgba(0, 163, 0, 0.2);
+}
+
+a, button, input, textarea {
+    transition: all 0.3s ease;
+}

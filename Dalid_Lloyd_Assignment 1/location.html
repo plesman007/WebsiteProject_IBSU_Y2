@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Pacific Laundry Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-bottom: 1px solid #c4c93700;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .logo {
+            height: 60px;
+            width: 70px;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 20%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+            transition: transform 0.3s;
+        }
+
+        .main-title {
+            display: flex;
+            align-self: center;
+            gap: 20px;
+            color: #004d40;
+            font-family: 'FreeStyle Script', 'Arial Narrow', Arial, sans-serif; 
+            background-image: linear-gradient(to right, #e6ee47, #01be21);
+        }
+
+        h1{ 
+            font-size: 2.5em;
+            font-weight: bold;
+            font-family: 'Freestyle Script', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header, main{
+            animation: fadeIn 1.5s ease;   
+        }
+
+        section{
+            animation: fadeIn 1.5s ease;
+        }
+
+        .navbar {
+            background-color: #01be21;
+            color: white;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+        }
+
+        .navbar a:hover {
+            background-color: #035f42;
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 40px;
+            padding: 20px;
+        }
+
+        section p{
+            color: #00A300;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        section ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        section ul li{
+            line-height: 1.5;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        section ul li:before {
+            content: ""; /* The custom bullet */
+            position: absolute;
+            left: 0;
+            top: 10px; /* Adjust to vertically center with the text */
+            width: 8px; /* Bullet size */
+            height: 8px; /* Bullet size */
+            background-color: #01be21; /* Bullet color */
+            border-radius: 50%; /* Makes the bullet round */
+        }
+
+        section ul li:hover{
+            color: #035f42;
+            cursor: pointer;
+        }
+
+        section p, section ul{
+            color: #00A300;
+            margin-bottom: 15px;
+        }
+
+        section ul{
+            padding-left: 20px;
+        }
+
+        section ul li{
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        .location-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .location-text {
+            flex: 3;
+            margin-right: 20px;
+        }
+        
+        .location-images{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .location-images img{
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 768px) {
+            .container{
+                width: 95%;
+            }
+
+            .navbar a{
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .logo{
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .location-container{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .location-text,
+            .location-images{
+                flex: none;
+            }
+
+            .location-images img {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+            
+        }
+
+        @keyframes fadeIn{
+            from {
+                opacity: 0;
+                transform: translate(0, -10%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            border-color: #00A300;
+            box-shadow: 0 0 8px rgba(0, 163, 0, 0.2);
+        }
+
+        a, button, input, textarea{
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: rgba;">
+        <div class="main-title">
+            <img src="Pictures/Logo/logo4.jpeg" alt="Pacific Laundry Services Logo" class="logo">
+            <h1>Pacific Laundry Services</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="#" class="active">Location</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="location-container">
+                <div class="location-text">
+                    <h2>Find Us Here!</h2>
+                    <p>We are located ALL Over PNG! 
+                         Visit us at our conveniently located laundry facilities for top-notch services tailored to your needs.
+                    </p>
+                    <img src="Pictures/Places/map.jpg" alt="Location of Pacific Laundry Services" style="max-width:100%; height:auto;">
+                    <h3>Our Locations:</h3>
+                    <ul>
+                        <li> Vision City, Port Moresby City, Papua New Guinea</li>
+                        <li> Eriku Brian Bell Home Center, Lae City, Papua New Guinea</li>
+                        <li> Andersons Foodland, Madang, Papua New Guinea</li>
+                        <li> Manu Market, Port Moresby City, Papua New Guinea</li>
+                        <li> Waigani Central, Port Moresby City, Papua New Guinea</li>
+                        <li> Kimbe Town</li>
+                        <li> Mount Hagen Town</li>
+                    </ul>
+                    <p>We are open from Monday to Saturday.</p>
+                    <p>9:00 AM to 8:00 PM</p>
+                    <h1>Other Locations Coming Soon!</h1>
+                </div>
+                <div class="location-images">
+                    <img src="Pictures/Places/vc3.png" alt="Vision City">
+                    <img src="Pictures/Places/lae.jpg" alt="lae City">
+                    <img src="Pictures/Places/madang.jpg" alt="Andersons">
+                    <img src="Pictures/Places/hagen.jpeg" alt="Vision City">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Pacific Laundry Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

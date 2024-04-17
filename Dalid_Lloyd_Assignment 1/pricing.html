@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Pacific Laundry Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-bottom: 1px solid #c4c93700;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .logo {
+            height: 60px;
+            width: 70px;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 20%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+            transition: transform 0.3s;
+        }
+
+        .main-title {
+            display: flex;
+            align-self: center;
+            gap: 20px;
+            color: #004d40;
+            font-family: 'FreeStyle Script', 'Arial Narrow', Arial, sans-serif; 
+            background-image: linear-gradient(to right, #e6ee47, #01be21);
+        }
+
+        h1{ 
+            font-size: 2.5em;
+            font-weight: bold;
+            font-family: 'Freestyle Script', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header, main{
+            animation: fadeIn 1.5s ease;   
+        }
+
+        .navbar {
+            background-color: #01be21;
+            color: white;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+        }
+
+        .navbar a:hover {
+            background-color: #035f42;
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 40px;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+        }
+        
+        .service-price-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .price-item {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: calc(33.333% - 20px);
+        }
+
+        .price-item h3 {
+            color: #027352;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .price-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .price-item ul li {
+            padding: 5px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .logo {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .services-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -10%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #00A300;
+    box-shadow: 0 0 8px rgba(0, 163, 0, 0.2);
+}
+
+a, button, input, textarea {
+    transition: all 0.3s ease;
+}
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <header style="background-color: rgba;">
+        <div class="main-title">
+            <img src="Pictures/Logo/logo4.jpeg" alt="Pacific Laundry Services Logo" class="logo">
+            <h1>Pacific Laundry Services</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="#" class="active">Pricing</a>
+            <a href="location.html">Location</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pricing-section">
+            <h2>Our Pricing</h2>
+            <p>Discover our competitive pricing for laundry and cleaning services tailored to meet your needs.</p>
+            <div class="service-price-list">
+                <article class="price-item">
+                    <h3>Residential Cleaning</h3>
+                    <ul>
+                        <li>Regular cleaning - K100</li>
+                        <li>Deep cleaning - K150</li>
+                        <li>Move-in/move-out cleaning - K200</li>
+                        <li>Special event cleaning - K250</li>
+                    </ul>
+                </article>
+
+                <article class="price-item">
+                    <h3>Commercial Cleaning</h3>
+                    <ul>
+                        <li>Office cleaning - K250</li>
+                        <li>Retail store cleaning - K300</li>
+                        <li>Restaurant cleaning - K350</li>
+                        <li>Warehouse cleaning - K400</li>
+                    </ul>
+                </article>
+
+                <article class="price-item">
+                    <h3>End of Tenancy Cleaning</h3>
+                    <ul>
+                        <li>Studio/1 bedroom - K120</li>
+                        <li>2 bedroom - K170</li>
+                        <li>3 bedroom - K220</li>
+                        <li>4+ bedroom - Contact for quote</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Pacific Laundry Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
