@@ -21,7 +21,7 @@ IBSUniversity-Website (Your project name)
 * ├── location.html (Internal CSS)
 * ├── contact-us.html (Internal CSS)
 * ├── about-us.html (Internal CSS)
-* └── images/  (Folder containing pictures)
+* └── images/  (Folder containing pictures(logos,places and people(ai generated))
 
 **Usage:**
 
