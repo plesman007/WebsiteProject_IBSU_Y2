@@ -6,22 +6,22 @@
 * Reponsive Design
 
 ## Technologies Used
-*HTML5
-*CSS
-*JavaScript (To be mention: Sepcific libararies if used)
+* HTML5
+* CSS
+* JavaScript (To be mention: Sepcific libararies if used)
 
 ## Project Structure
 
 IBSUniversity-Website (Your project name)
-    ├── index.html (Main HTML file)
-    ├── styles.css (Linked to index.html)
-    ├── services.html
-    │   └── service.css (Linked to styles.css)
-    ├── pricing.html (Internal CSS)
-    ├── location.html (Internal CSS)
-    ├── contact-us.html (Internal CSS)
-    ├── about-us.html (Internal CSS)
-    └── images/  (Folder containing pictures)
+* ├── index.html (Main HTML file)
+* ├── styles.css (Linked to index.html)
+* ├── services.html
+* │   └── service.css (Linked to styles.css)
+* ├── pricing.html (Internal CSS)
+* ├── location.html (Internal CSS)
+* ├── contact-us.html (Internal CSS)
+* ├── about-us.html (Internal CSS)
+* └── images/  (Folder containing pictures)
 
 **Usage:**
 
