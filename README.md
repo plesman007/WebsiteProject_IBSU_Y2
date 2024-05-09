@@ -28,6 +28,9 @@ IBSUniversity-Website (Your project name)
 1. Deploy the website files to a web hosting platform.
 2. Access the website using the provided URL.
 
+**Update**
+*Made changes to the website cart option just front end
+*JavaScript for the behvaiour of the Checkout
 
 **Additional Information:**
 
