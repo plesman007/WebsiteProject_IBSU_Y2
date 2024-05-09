@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Pacific Laundry Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:rgba(242, 242, 242, 1);
+            padding: 20px;
+            border-bottom: 1px solid #c4c93700;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .main-title {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: #004d40;
+            background-image: linear-gradient(to right, #e6ee47, #01be21);
+        }
+
+        .logo {
+            height: 60px;
+            width: 70px;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 20%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+            transition: transform 0.3s;
+       
+        }
+
+        h1{
+            font-size: 2.5em;
+            font-weight: bold;
+            font-family: 'Freestyle Script', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        head,main{
+            animation: fadeIn 1.5s ease;
+        }
+
+        section{
+            animation: fadeIn 1.5s ease;
+        }
+
+        .navbar{
+            background-color:#01be21;
+            color: white;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+         }
+    
+        .navbar a:hover {
+         background-color: #035f42;
+         text-decoration: underline;
+            }
+
+
+         body, html {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #004d40;
+            color: white;
+        }
+        .total-line {
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 50px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #01be21;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #035f42;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+        
+        @media screen and (max-width: 768px) {
+                .container{
+                    width: 95%;
+                }
+    
+                .navbar a{
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+    
+                .logo{
+                    height: 40px;
+                    margin-right: 10px;
+                }
+    
+            }
+    
+            @keyframes fadeIn{
+                from {
+                    opacity: 0;
+                    transform: translate(0, -10%, 0);
+                }
+                to {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+    </style>
+</head>
+<body>
+    <header style="background-color: rgba(127, 231, 57, 0.463); padding: 20px;">
+        <div class="main-title">
+            <img src="Pictures/Logo/logo4.jpeg" alt="Pacific Laundry Services Logo" class="logo">
+            <h1>Pacific Laundry Services</h1>
+        </div>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="location.html">Location</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="cart.html">Cart</a>
+                <a href="about-us.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="total-line">Subtotal</td>
+                    <td id="subtotal">K0.00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="total-line">Tax (5%)</td>
+                    <td id="tax">K0.00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="total-line">Total</td>
+                    <td id="total">K0.00</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+
+    <script>
+        // Sample data
+        const cartData = [
+            { id: 1, name: "Laundry Service", price: 10.00, quantity: 2 },
+            { id: 2, name: "Dry Cleaning", price: 15.00, quantity: 1 },
+            { id: 3, name: "Ironing Service", price: 5.00, quantity: 3 }
+        ];
+
+        function updateCartDisplay() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = ''; // Clear existing items
+            let subtotal = 0;
+
+            cartData.forEach(item => {
+                const total = item.price * item.quantity;
+                subtotal += total;
+                cartItemsContainer.innerHTML += `
+                    <tr>
+                        <td>${item.name}</td>
+                        <td><input type="number" value="${item.quantity}" min="0" onchange="updateQuantity(${item.id}, this.value)"></td>
+                        <td>$${item.price.toFixed(2)}</td>
+                        <td>$${total.toFixed(2)}</td>
+                    </tr>
+                `;
+            });
+
+            updateSummary(subtotal);
+        }
+
+        function updateQuantity(id, quantity) {
+            const item = cartData.find(item => item.id === id);
+            item.quantity = parseInt(quantity);
+            updateCartDisplay();
+        }
+
+        function removeItem(id) {
+            const index = cartData.findIndex(item => item.id === id);
+            cartData.splice(index, 1);
+            updateCartDisplay();
+        }
+
+        function updateSummary(subtotal) {
+            const taxRate = 0.05;
+            const tax = subtotal * taxRate;
+            const total = subtotal + tax;
+
+            document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
+            document.getElementById('tax').textContent = `$${tax.toFixed(2)}`;
+            document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+        }
+
+        function proceedToCheckout() {
+           const subtotal=calculateSubtotal();
+           const tax=subtotal*0.05;
+           const total=subtotal+tax;
+
+           localStorage.setItem('totalAmount',total.toFixed(2));
+            window.location.href = 'billingpage.html'; // Assuming the billing page is named 'billing_page.html'
+        }
+
+        function calculateSubtotal(){
+            let subtotal = 0;
+            cartData.forEach(item => {
+                const total = item.price * item.quantity;
+                subtotal += total;
+            });
+            return subtotal;
+        }
+
+        updateCartDisplay(); // Initial display update
+    </script>
+    <footer>
+        <p>&copy; 2021 Pacific Laundry Services</p>
+    </footer>
+</body>
+</html>
