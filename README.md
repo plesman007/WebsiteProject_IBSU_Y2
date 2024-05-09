@@ -4,6 +4,7 @@
 **Features**
 * Multiple Landing Pages
 * Reponsive Design
+* Billing (Front End)
 
 ## Technologies Used
 * HTML5
