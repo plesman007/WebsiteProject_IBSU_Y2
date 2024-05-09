@@ -12,7 +12,7 @@
 
 ## Project Structure
 
-IBSUniversity-Website (Your project name)
+IBSUniversity-Website (Pacific Laundry Service)
 * ├── index.html (Main HTML file)
 * ├── styles.css (Linked to index.html)
 * ├── services.html
@@ -21,6 +21,7 @@ IBSUniversity-Website (Your project name)
 * ├── location.html (Internal CSS)
 * ├── contact-us.html (Internal CSS)
 * ├── about-us.html (Internal CSS)
+* ├── Cart.html (Css and JavaScript for the Billing Page)
 * └── images/  (Folder containing pictures(logos,places and people(ai generated))
 
 **Usage:**
